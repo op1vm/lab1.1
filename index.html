@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/supercat4.jpg" type="image/x-icon" />
     <link rel="shortcut icon" href="img/supercat4.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
     <title>CatPhotoApp</title>
   </head>
+  <header class="header">
+    <h1>CatPhotoApp</h1>
+  </header>
   <body>
     <main>
-      <h1>CatPhotoApp</h1>
       <section>
         <h2>Кото-фото</h2>
-        <p>Усі люблять коттиків</p>
+        <p>Усі люблять котиків</p>
         <p>
           Побачити більше
           <a target="_blank" href="index2.html">фото котиків</a>
@@ -55,63 +70,61 @@
           <figcaption>Коти <strong>ненавидять</strong> собак.</figcaption>
         </figure>
       </section>
-      <section>
-        <h2>Котяча форма ฅ&circ;&gt;⩊&lt;&circ;ฅ</h2>
-  <form action="index3.html">
-          <fieldset>
-            <legend>Ваш котик більше любить вулицю чи дом?</legend>
-            <label
-              ><input
-                id="indoor"
-                type="radio"
-                name="indoor-outdoor"
-                value="indoor"
-                checked
-              />
-              Дом</label
-            >
-            <label
-              ><input
-                id="outdoor"
-                type="radio"
-                name="indoor-outdoor"
-                value="outdoor"
-              />
-              Вулицю</label
-            >
-          </fieldset>
-          <fieldset>
-            <legend>Який характер у вашого кота?</legend>
-            <input
-              id="loving"
-              type="checkbox"
-              name="personality"
-              value="loving"
+    </main>
+    <footer class="footer">
+      <p class="form_title">Котяча форма ฅ^>ﻌ<^ฅ</p>
+      <form action="index3.html">
+        <fieldset>
+          <legend>Ваш котик більше любить вулицю чи дом?</legend>
+          <label
+            ><input
+              id="indoor"
+              type="radio"
+              name="indoor-outdoor"
+              value="indoor"
               checked
             />
-            <label for="loving">Ніжний</label>
-            <input id="lazy" type="checkbox" name="personality" value="lazy" />
-            <label for="lazy">Лінивий</label>
-            <input
-              id="energetic"
-              type="checkbox"
-              name="personality"
-              value="energetic"
+            Дом</label
+          >
+          <label
+            ><input
+              id="outdoor"
+              type="radio"
+              name="indoor-outdoor"
+              value="outdoor"
             />
-            <label for="energetic">Енергічний</label>
-          </fieldset>
+            Вулицю</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Який характер у вашого кота?</legend>
           <input
-            type="text"
-            name="catphotourl"
-            placeholder="cat photo URL"
-            required
+            id="loving"
+            type="checkbox"
+            name="personality"
+            value="loving"
+            checked
           />
-          <button type="submit">відправити</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>No Copyright -<a href="https://t.me/op1vm_t">op1vm</a></p>
+          <label for="loving">Ніжний</label>
+          <input id="lazy" type="checkbox" name="personality" value="lazy" />
+          <label for="lazy">Лінивий</label>
+          <input
+            id="energetic"
+            type="checkbox"
+            name="personality"
+            value="energetic"
+          />
+          <label for="energetic">Енергічний</label>
+        </fieldset>
+        <input class="photo_url"
+          type="text"
+          name="catphotourl"
+          placeholder="cat photo URL"
+          required
+        />
+        <button type="submit">відправити</button>
+      </form>
+      <p class="no_cop">No Copyright - <a href="https://t.me/op1vm_t">op1vm</a></p>
     </footer>
   </body>
 </html>
