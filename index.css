@@ -117,15 +117,9 @@ img {
 
 .big-img {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
-  margin: 0 auto;
-  width: 100%;
+  margin: 10px auto;
   max-width: 740px;
   height: 450px;
-  object-fit: cover;
   border-radius: 40px;
 }
 
