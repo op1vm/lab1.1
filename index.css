@@ -24,7 +24,6 @@ fieldset {
 
 body {
   margin: 0;
-  background: #a5a5d1;
 }
 
 .header {
@@ -150,6 +149,48 @@ img {
   height: 100px; 
   max-height: 200px;
   display: inline-block;
+}
+
+/* Animated gradient + subtle wave overlays (adapted from responsive-header-sample) */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes wave {
+  0% { transform: translateX(-50%) translateY(0) rotate(0deg); }
+  50% { transform: translateX(-50%) translateY(-2%) rotate(180deg); }
+  100% { transform: translateX(-50%) translateY(0) rotate(360deg); }
+}
+
+
+.animated-bg {
+  min-height: 100vh;
+  position: relative;
+  overflow: visible;
+  background: linear-gradient(70deg, #7575a1 25%, #ecd8f8 50%, #a5a5d1 75%, #2b2b5b 100%);
+  background-size: 300% 300%;
+  animation: gradientFlow 15s ease infinite;
+}
+
+.animated-bg::before,
+.animated-bg::after {
+  /* keep body pseudo-elements off; animated top block will render the decorative shapes */
+  display: none;
+}
+
+
+/* make page content sit above the animated background */
+header, main, footer, .total, .final_page {
+  position: relative;
+  z-index: 1;
+}
+
+/* small optimization: reduce animation on low-power devices */
+@media (prefers-reduced-motion: reduce) {
+  .animated-bg { animation: none; }
+  .animated-bg::before, .animated-bg::after { animation: none; }
 }
 
 
