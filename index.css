@@ -199,6 +199,7 @@ footer,
   align-items: center;
   justify-content: space-between;
 }
+.header-inner{ position: relative; }
 .logo {
   color: #2b2b5b;
   text-decoration: none;
@@ -270,7 +271,7 @@ footer,
 
 @media (max-width: 800px) {
   .nav-menu {
-    display: none;
+  .nav-toggle{ display:block; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); z-index: 10003; padding: 8px; }
     position: absolute;
     right: 10px;
     top: 100%;
