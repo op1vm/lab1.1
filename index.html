@@ -21,11 +21,25 @@
     <link rel="stylesheet" href="index.css" />
     <title>CatPhotoApp</title>
   </head>
-  <header class="header">
-    <h1>CatPhotoApp</h1>
-  </header>
   <body class="animated-bg">
     <div class="animated-bg-top" aria-hidden="true"></div>
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">CatPhotoApp</a>
+        <nav class="nav">
+          <ul id="nav-menu" class="nav-menu">
+            <li class="has-dropdown">
+              <button class="drop-toggle" aria-expanded="false">More</button>
+              <ul class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Gallery</a></li>
+                <li><a href="index.html#contact-form">Form</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
       <section>
         <h2>Кото-фото</h2>
@@ -74,7 +88,7 @@
     </main>
     <footer class="footer">
       <p class="form_title">Котяча форма ฅ^>ﻌ<^ฅ</p>
-      <form action="index3.html">
+      <form id="contact-form" action="index3.html">
         <fieldset>
           <legend>Ваш котик більше любить вулицю чи дiм?</legend>
           <label
@@ -117,7 +131,8 @@
           />
           <label for="energetic">Енергічний</label>
         </fieldset>
-        <input class="photo_url"
+        <input
+          class="photo_url"
           type="text"
           name="catphotourl"
           placeholder="cat photo URL"
@@ -125,7 +140,10 @@
         />
         <button type="submit">відправити</button>
       </form>
-      <p class="no_cop">No Copyright - <a class="no_cop" href="https://t.me/op1vm_t">op1vm</a></p>
+      <p class="no_cop">
+        No Copyright - <a class="no_cop" href="https://t.me/op1vm_t">op1vm</a>
+      </p>
     </footer>
+    <script src="js/header.js"></script>
   </body>
 </html>

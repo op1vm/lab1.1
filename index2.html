@@ -12,13 +12,33 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>CatPhotoApp</title>
   </head>
   <body class="animated-bg">
     <div class="animated-bg-top" aria-hidden="true"></div>
     <header class="header">
-      <h1>Кото-фото</h1>
+      <div class="header-inner">
+        <a class="logo" href="index.html">CatPhotoApp</a>
+        <nav class="nav">
+          <ul id="nav-menu" class="nav-menu">
+            <li class="has-dropdown">
+              <button class="drop-toggle" aria-expanded="false">More</button>
+              <ul class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Gallery</a></li>
+                <li><a href="index.html#contact-form">Form</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <img
       class="big-img"
@@ -33,8 +53,11 @@
       <img src="img/supercat2.jpg" alt="funny cat" />
       <img src="img/supercat4.jpg" alt="funny cat" />
     </div>
+    <footer class="footer">
+      <p class="no_cop">
+        No Copyright - <a class="no_cop" href="https://t.me/op1vm_t">op1vm</a>
+      </p>
+    </footer>
+    <script src="js/header.js"></script>
   </body>
-  <footer class="footer">
-    <p class="no_cop">No Copyright - <a class="no_cop" href="https://t.me/op1vm_t">op1vm</a></p>
-  </footer>
 </html>
